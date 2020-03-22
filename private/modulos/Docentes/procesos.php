@@ -43,7 +43,7 @@ class docente{
                         "'. $this->datos['telefono'] .'"
                     )
                 ');
-                $this->respuesta['msg'] = 'Registro ingresado correctamente';
+                $this->respuesta['msg'] = 'Registro ingresado de manera correcta';
             }
         }
     }
