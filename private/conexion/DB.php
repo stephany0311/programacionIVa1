@@ -3,10 +3,11 @@
 /**
  * Clase de conexion al servidor de BD
  */
+<?php
 class Conexion{
-    private $conexion='', $result='';
+    private $Conexion='', $result='';
 
-    public function Conexion($server, $user, $pass, $db){
+    public function Conexion($server, $user, $pass, $db="db_app_academica"){
         $this->conexion = mysqli_connect($server,$user,$pass,$db) or die('NO pude conectarme al servidor de BD');
     }
     public function consultas($sql=''){
